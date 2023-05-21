@@ -10,16 +10,22 @@ class Program
      
        
        Console.Write("What is your last name? ");
-       string last = Console.ReadLine();
+        string last = Console.ReadLine();
 
         Console.WriteLine("Your name is {0}, {1}, {0}", last, first, last);
+        // in this one "first" replaces the first ctnr {0} and "last" replaces the ctnr {1} which is the second
+
         Console.WriteLine($"Your name is {last}, {first}, {last}.");
+        // start the string with a dollar sign and put the variable inside curly bracets
 
         Console.Write("How many letters has your first name?: ");
-        int number1 = Convert.ToInt32(Console.ReadLine());
+        int number1 = int.Parse(Console.ReadLine());
+
 
         Console.Write("How many Letters has your last name?: ");
         int number2 = Convert.ToInt32(Console.ReadLine());
+
+         // int.Parse(); and Convert.ToInt32(); are two different ways you can convert a string to int
 
          int result = number1 + number2;
         
